@@ -14,8 +14,8 @@ class TestDay1(unittest.TestCase):
 
     def test_part_1(self):
         """Test for part 1 with example file."""
-        expected_result = 1226
-        result = main.part_1("test.txt")
+        expected_result = 7
+        result = main.part_1("aoc/d1/test.txt")
         self.assertEqual(result, expected_result)
         
 
