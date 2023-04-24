@@ -4,8 +4,8 @@ def part_1(file_name):
     """Return the number of measurements that are in increasing order."""
     import os
     a= os.listdir('.')
-    file = open(file_name, "r")
-    data = [int(line.strip()) for line in file.readlines()]  # parsing
+    with open(file_name, "r") as file:
+        data = [int(line.strip()) for line in file.readlines()]  # parsing
     return get_increasing_measurements(data)
 
 
