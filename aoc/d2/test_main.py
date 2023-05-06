@@ -23,6 +23,12 @@ class TestDay2(unittest.TestCase):
         data = main.parse_input(self.test_file_path)
         self.assertEqual(data, expected_output)
 
+    def test_get_distance_and_depth_with_aim(self):
+        input_data = [("f", 5), ("d", 5), ("f", 8), ("u", 3), ("d", 8), ("f", 2)]
+        distance, depth = main.get_distance_and_depth_with_aim(input_data)
+        self.assertEqual(distance, 15)
+        self.assertEqual(depth, 60)
+
         
 
 if __name__ == '__main__':
